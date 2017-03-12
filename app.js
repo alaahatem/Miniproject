@@ -92,7 +92,7 @@ app.use(function (req, res, next) {
 //
 var storage =   multer.diskStorage({
   destination: function (req, file, callback) {
-    callback(null, '/home/alaakurdi/Desktop/Miniproj/public/uploads');
+    callback(null, './public/uploads');
   },
   filename: function (req, file, callback) {
     callback(null, file.fieldname + '-' + Date.now());
@@ -114,7 +114,7 @@ app.post('/api/photo',function(req,res){
 
 var fs = require('fs');
 var Images=[];
-fs.readdir('/home/alaakurdi/Desktop/Miniproj/public/uploads',function(err,files){
+fs.readdir('./public/uploads',function(err,files){
     if(err) throw err;
     files.forEach(function(file){
         // do something with each file HERE!
