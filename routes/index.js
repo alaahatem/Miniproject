@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var projectController = require('/home/alaakurdi/Desktop/Miniproj/controllers/projectController/projectController.js');
+var projectController = require('../controllers/projectController/projectController.js');
 
 // Get Homepage
 router.get('/', function(req, res){
