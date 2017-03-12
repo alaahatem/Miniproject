@@ -3,7 +3,7 @@ var router = express.Router();
 var User = require('../models/user');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-var projectController = require('/home/alaakurdi/Desktop/Miniproj/controllers/projectController/projectController.js');
+var projectController = require('../controllers/projectController/projectController.js');
 
 router.get('/project', projectController.getAllProjects);
 router.post('/project', projectController.createProject);
