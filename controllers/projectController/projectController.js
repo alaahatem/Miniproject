@@ -1,5 +1,5 @@
-let Project = require('/home/alaakurdi/Desktop/Miniproj/models/projects');
-var user = require('/home/alaakurdi/Desktop/Miniproj/routes');
+let Project = require.main.require('./models/projects.js');
+var user = require.main.require('./routes');
 let projectController = {
 
     getAllProjects:function(req, res){
